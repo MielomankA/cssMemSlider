@@ -185,6 +185,10 @@ body {
   padding: 5vh 0;
 }
 
+.lg {
+  display: none;
+}
+
 .slider-wrap {
   display: flex;
   /* width: 70%; */
@@ -256,6 +260,49 @@ body {
   font-family: 'El Messiri';
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.slider-bullets {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_pg {
+  font-family: Aclonica;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.slider_pg:hover {
+  font-size: 2rem;
+  color: #9146a4;
+}
+
+#pg1:checked ~ .slider-desc-wrap .slider-bullets .page1 {
+  font-size: 2rem;
+  color: #89dee2;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+#pg2:checked ~ .slider-desc-wrap .slider-bullets .page2 {
+  font-size: 2rem;
+  color: #89dee2;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+#pg3:checked ~ .slider-desc-wrap .slider-bullets .page3 {
+  font-size: 2rem;
+  color: #89dee2;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+#pg4:checked ~ .slider-desc-wrap .slider-bullets .page4 {
+  font-size: 2rem;
+  color: #89dee2;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 @media (max-width: 760px) {
