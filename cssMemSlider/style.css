@@ -103,10 +103,6 @@ button,
   padding: 0;
 }
 
-:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 :-moz-ui-invalid {
   box-shadow: none;
 }
@@ -122,11 +118,6 @@ progress {
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
-}
-
-[type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
 }
 
 ::-webkit-search-decoration {
@@ -159,16 +150,10 @@ html {
 }
 
 body {
-  /* width: 100%; */
   font-family: Roboto;
   height: 100vh;
   background-repeat: no-repeat;
-  background: rgb(145, 70, 164);
-  background: linear-gradient(
-    34deg,
-    rgba(145, 70, 164, 1) 20%,
-    rgba(136, 221, 225, 1) 70%
-  );
+  background: #e7d2ec;
   font-size: 1rem;
 }
 
@@ -183,6 +168,7 @@ body {
   font-size: 3rem;
   text-align: center;
   padding: 5vh 0;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000, 0 0 1em #fff, 0 0 0.2em #fff;
 }
 
 .lg {
@@ -191,14 +177,8 @@ body {
 
 .slider-wrap {
   display: flex;
-  /* width: 70%; */
   align-items: center;
   justify-content: center;
-
-  /*   width: 400%;
-  height: auto;
-  overflow: hidden;
-  border-radius: 2rem; */
 }
 
 .slider {
@@ -208,46 +188,35 @@ body {
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0.4rem rgb(255 255 255 / 20%);
   transition: all 0.2s ease;
-  /*   width: 400%;
-  height: 100%;
-  display: flex; */
 }
 
 .slide {
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
-  backdrop-filter: blur(150px);
+  backdrop-filter: blur(6rem);
 }
 
 .slide__img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  /* backdrop-filter: blur(150px); */
 }
 
 #pg1:checked ~ .slider-wrap .slider .slide1 {
   transform: translateY(0);
-  /* transform: translateX(0);  */
 }
 
 #pg2:checked ~ .slider-wrap .slider .slide2 {
   transform: translateY(-70vh);
-  /* backdrop-filter: blur(150px); */
-  /*  transform: translateX(-100%); */
 }
 
 #pg3:checked ~ .slider-wrap .slider .slide3 {
   transform: translateY(-140vh);
-  /* backdrop-filter: blur(150px); */
-  /* transform: translateX(-200%); */
 }
 
 #pg4:checked ~ .slider-wrap .slider .slide4 {
   transform: translateY(-210vh);
-  /* backdrop-filter: blur(150px); */
-  /* transform: translateX(-300%); */
 }
 
 .slider-desc-wrap {
@@ -266,7 +235,7 @@ body {
   font-family: 'El Messiri';
   font-weight: 700;
   font-size: 1.5rem;
-  backdrop-filter: blur(150px);
+  backdrop-filter: blur(2rem);
   transition: all 0.2s ease;
 }
 
