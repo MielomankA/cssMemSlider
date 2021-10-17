@@ -256,10 +256,34 @@ body {
   justify-content: space-between;
 }
 
+.slider-desc {
+  height: 3vh;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
 .slider-desc-text {
   font-family: 'El Messiri';
   font-weight: 700;
   font-size: 1.5rem;
+  backdrop-filter: blur(150px);
+  transition: all 0.2s ease;
+}
+
+#pg1:checked ~ .slider-desc-wrap .slider-desc .text1 {
+  transform: translateY(0);
+}
+
+#pg2:checked ~ .slider-desc-wrap .slider-desc .text2 {
+  transform: translateY(-3vh);
+}
+
+#pg3:checked ~ .slider-desc-wrap .slider-desc .text3 {
+  transform: translateY(-5.75vh);
+}
+
+#pg4:checked ~ .slider-desc-wrap .slider-desc .text4 {
+  transform: translateY(-8.1vh);
 }
 
 .slider-bullets {
